@@ -1,0 +1,20 @@
+{
+  "name": "@monodon/my-rust-node-lib-linux-arm64-gnu",
+  "version": "0.0.0",
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "arm64"
+  ],
+  "main": "my_rust_node_lib.linux-arm64-gnu.node",
+  "files": [
+    "my_rust_node_lib.linux-arm64-gnu.node"
+  ],
+  "engines": {
+    "node": ">= 10"
+  },
+  "libc": [
+    "glibc"
+  ]
+}

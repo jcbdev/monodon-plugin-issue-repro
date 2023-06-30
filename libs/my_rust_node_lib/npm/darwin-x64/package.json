@@ -1,0 +1,17 @@
+{
+  "name": "@monodon/my-rust-node-lib-darwin-x64",
+  "version": "0.0.0",
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "my_rust_node_lib.darwin-x64.node",
+  "files": [
+    "my_rust_node_lib.darwin-x64.node"
+  ],
+  "engines": {
+    "node": ">= 10"
+  }
+}

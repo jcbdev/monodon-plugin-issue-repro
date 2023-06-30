@@ -1,5 +1,8 @@
+
 [workspace]
-members = []
+members = [
+	'libs/my_rust_node_lib',
+]
 
 [profile.release]
 lto = true

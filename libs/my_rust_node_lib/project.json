@@ -1,0 +1,41 @@
+{
+  "name": "my_rust_node_lib",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/my_rust_node_lib/src",
+  "targets": {
+    "build": {
+      "executor": "@monodon/rust:napi",
+      "options": {
+        "dist": "libs/my_rust_node_lib",
+        "jsFile": "index.js"
+      },
+      "configurations": {
+        "production": {
+          "dist": "dist/my_rust_node_lib",
+          "release": true
+        }
+      }
+    },
+    "test": {
+      "executor": "@monodon/rust:test",
+      "outputs": ["{options.target-dir}"],
+      "options": {
+        "target-dir": "dist/target/my_rust_node_lib"
+      },
+      "configurations": {
+        "production": {
+          "release": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@monodon/rust:lint",
+      "outputs": ["{options.target-dir}"],
+      "options": {
+        "target-dir": "dist/target/my_rust_node_lib"
+      }
+    }
+  },
+  "tags": []
+}

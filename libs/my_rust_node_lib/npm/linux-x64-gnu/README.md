@@ -1,0 +1,3 @@
+# `@monodon/my-rust-node-lib-linux-x64-gnu`
+
+This is the **x86_64-unknown-linux-gnu** binary for `@monodon/my-rust-node-lib`
